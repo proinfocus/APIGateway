@@ -19,10 +19,8 @@ It is a simple library which adds Api Gateway functionality to your .NET 6 WebAp
     using Proinfocus.ApiGateway;
     
     var builder = WebApplication.CreateBuilder(args);
-    builder.AddApiGateway();
-        
-    var app = builder.Build();
-      
+    builder.AddApiGateway();        
+    var app = builder.Build();      
     app.UseApiGateway();
     app.Run();
     ```
