@@ -3,7 +3,7 @@
 It is a simple library which adds Api Gateway functionality to your .NET 6 WebApi projects.
 
 ## NuGet Packages
-
+Download NuGet package from [https://www.nuget.org/packages/Proinfocus.ApiGateway/]
 
 ## Usage
 - Add **Proinfocus.ApiGateway** NuGet package to your .NET 6 WebApi project.
