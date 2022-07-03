@@ -20,20 +20,9 @@ It is a simple library which adds Api Gateway functionality to your .NET 6 WebAp
     
     var builder = WebApplication.CreateBuilder(args);
     builder.AddApiGateway();
-    builder.Services.AddEndpointsApiExplorer();
-    builder.Services.AddSwaggerGen();
-    
+        
     var app = builder.Build();
-    
-    if (app.Environment.IsDevelopment())
-    {
-        app.UseSwagger();
-        app.UseSwaggerUI();
-    }
-    
-    app.UseHttpsRedirection();
-    app.UseAuthorization();
-    
+      
     app.UseApiGateway();
     app.Run();
     ```
