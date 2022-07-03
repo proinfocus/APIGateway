@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>0.0.1.0</Version>
+		<Authors>Proinfocus</Authors>
+		<Description>A simple Api Gateway for your .NET 6 projects with minimal settings and configuration.</Description>
+		<Copyright>Copyright 2022, Proinfocus.</Copyright>
+		<PackageIcon>Proinfocus Logo.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<None Remove="favicon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="favicon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.MiddlewareAnalysis" Version="6.0.6" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Proinfocus Logo.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="README.md">
+			<PackagePath>\</PackagePath>
+			<Pack>True</Pack>
+		</None>
+	</ItemGroup>
+
+</Project>
